@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="all">
+    <header>
+        <h4>calc</h4>
+        <div class="b">
+        <h5>THEME</h5>
+        <ul>
+            <li><button class="colors one" > 1</button></li>
+            <li><button class="colors two">2</button> </li>
+            <li><button class="colors three">3</button> </li>
+        </ul>
+        </div>
+           
+    </header>
+   
+
+    <!--calculator section-->
+    <div class="box-section" id="boxed">0</div>
+    <div class="numbers" id="numbs">
+        <button onclick="appendInput(7)" class="numberss" value=7 >7</button>
+        <button  onclick="appendInput(8)"  class="numberss" value=8 >8</button>
+        <button  onclick="appendInput(9)"  class="numberss" value=9>9</button>
+        <button  onclick="clearInput()"  class="del">DEL</button> <br>
+        <button  onclick="appendInput(4)"  class="numberss" value=4>4</button>
+        <button  onclick="appendInput(5)"  class="numberss" value=5 >5</button>
+        <button  onclick="appendInput(6)"  class="numberss" value=6 >6</button>
+        <button  onclick="appendInput(`+`)"  class="numberss" >+</button> <br>
+        <button  onclick="appendInput(1)"  class="numberss" value=1 >1</button>
+        <button  onclick="appendInput(2)"  class="numberss"  value=2>2</button>
+        <button  onclick="appendInput(3)"  class="numberss" value=3 >3</button>
+        <button  onclick="appendInput(`-`)"  class="numberss" >-</button> <br>
+        <button  onclick="appendInput(`.`)"  class="numberss" value=".">.</button>
+        <button  onclick="appendInput(0)"  class="numberss" value=0>0</button>
+        <button  onclick="appendInput(`/`)"  class="numberss">/</button>
+        <button  onclick="appendInput(`*`)"  class="numberss">*</button> <br>
+        <button  onclick="resetCalculator()"  class="reset">RESET</button>
+        <button  onclick="calculateResult()"  class="equalto">=</button>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
